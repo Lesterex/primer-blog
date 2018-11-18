@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/formulario1.css">
+    <script type="text/javascript" src="js/slide.js"></script>
+        <nav>
+            <a href=index.html>Pagina Principal</a>
+        </nav>
+        
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de inscripcion de Socios</h1>
+        <hr/> 
+        <div class="formulario">
+            <h2>Formulario de registro</h2>
+            <hr/>
+            <form action="" method="post" onsubmit="javascript:return Validar(this);">
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre" id= "nombre" value= "" required> <br>
+                <label>Apellido:</label><br>
+                <input type="text" name="apellido" id= "apellido" value= "" required> <br>
+                <label>Fecha de nacimiento: (no puede ser anterior al 2001)</label><br>
+                <input type="date" name="FechNacimiento" id= "FechNacimiento"  max="2000-12-31" value= "" required> <br>
+                <label>Email</label><br>
+                <input type="email" name="email" id= "email" value= "" required> <br>
+                <label>Rut</label><br>
+                <input type="number" name="Rut" id= "Rut" value= "" required> <br>
+                <label>Ingrese Contraseña</label><br>
+                <input type="password" name="Pass1" id= "Pass1" value= "" required> <br>
+                <label>Confirme Contraseña</label><br>
+                <input type="password" name="Pass2" id= "Pass2" value= "" required> <br>
+                <input type="submit" value="Enviar Datos"><br>
+                
+            </form>
+            
+       </div>
+    </div>
+</body>   
+</html>

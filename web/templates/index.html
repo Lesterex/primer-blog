@@ -1,0 +1,209 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/seccion_logo.css' %}">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="{% static 'js/slide.js' %}"></script>
+   <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+   <script src="{% static 'js/scripReg.js' %}"></script>
+   <title>Mis Perris</title>
+</head>
+<body>
+        <div class="contenedor">
+            <header class="row">
+                <div class="logo" id="fondologo">
+                        <img src="{% static 'img/logo.png' %}" alt="logo">
+                </div>
+               
+               <nav id="fondonav" >
+                      <ul id="menu" class="row center-xs start-md">
+                      
+                        <li class='active'><a href='#'>Home</a></li>
+                        <li><a href="#logo">Inicio </a></li>
+                        <li><a href=#informacion>Quienes somos </a></li>
+                        <li><a href="#">Servicios </a></li>
+                        <li><a href="#">Contactos </a></li>
+                        <li><a href=formulario.html>Registrarse </a></li>
+                      </ul> 
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="centro">
+        <center >
+            <img src="{% static 'img/perro.png' %}" width=1550 alt="texto alternativo">
+          </br></br>  
+            <ul >
+                <li><h1 class="ColorB1">+569 98765431</h1></li>
+                <li><h1 class="ColorB2">Rescate y adopcion de perros callejeros</h1></li>
+                <li>
+                    <ul>
+                        <li class:".redes">
+                            <a id:"space" href="https://www.facebook.com" target="_blank"><img alt="Siguenos en Facebook!" height="32" src="{% static 'img/fb_1.png' %}" title="Siguenos en facebook!" width="30" HSPACE="30" VSPACE="30"/></a>
+                            <a id:"space" href="https://www.google.cl" target="_blank"><img alt="Siguenos en Google+!" height="32" src="{% static 'img/google_plus.png' %}" title="Siguenos en Google+!" width="30" HSPACE="30" VSPACE="30"/></a>
+                            <a id:"space" href="https://www.instagram.com" target="_blank"><img alt="Siguenos en Instagram!" height="32" src="{% static 'img/instaa.png' %}" title="Siguenos en Instagram!" width="30" HSPACE="30" VSPACE="30"/></a>
+                            <a id:"space" href="https://www.gmail.com" target="_blank"><img alt="Envianos un correo" height="32" src="{% static 'img/email.png' %}" title="Envianos un Correo!" width="30" HSPACE="30" VSPACE="30"/></a>
+                        </li>
+                       
+                    </ul>
+                </li>
+              
+            </ul>
+            
+        </center>
+        </div>
+        
+        
+        <div class="informacion">
+            <h1 id="informacion" >RESCATE </h1>
+            <br>
+            <h2 id="etiqueta"> Sobre nosotros</h2>
+            <h2 id="etiqueta">  Etapa uno</h2>
+            <h2 id="etiqueta">_______________</h2>
+            <h2 id="etiqueta">Rescatamos perros en situación de peligro y/o abandono. </h2>
+            <h2 id="etiqueta">Los rehabilitamos y los preparamos para buscarles un hogar.</h2>
+            <img src="{% static 'img/rescate.jpg' %}" whidth="500">
+            <input type="button" id="boton"Value="Ayudanos">
+        </div>
+
+        <div class="financiamiento">
+            
+            <h1>CROWFUNDING</h1>
+            <br>
+            <h2 id="etiqueta">Financiamiento</h2>
+            <h2 id="etiqueta">__________________</h2>
+            <h2 id="etiqueta">Sigue nuestras redes sociales para mas informacion acerca de las diversas compañias</h2>
+            <h2 id="etiqueta">y actividades que realizamos para obtener financiamiento para seguir ayudando</h2>
+            <img src="{% static 'img/crowfunding.jpg' %}" width="300" >
+            <input type="button" id="boton"Value="Campaña">     
+        </div>
+
+        <div class="contenedor2">
+               
+                <div id="slider">
+                   <ul>
+                        <li><img src="{% static 'img/1.jpg' %}" alt=""></li>
+                        <li><img src="{% static 'img/2.jpg' %}" alt=""></li>
+                        <li><img src="{% static 'img/3.jpg' %}" alt=""></li>
+                        <li><img src="{% static 'img/4.jpg' %}" alt=""></li>
+                     </ul>
+                </div>
+        </div>  
+<div class="row galerias">
+    <center class="col-lg-4">
+        <!--esta area es para centrar la galeria-->
+    </center>
+                <div class="col-xs-4 col-lg-1 galeria estilo1">
+                    <a href="#img1"><img src="{% static 'img/rescatado.jpg' %}" ></a>
+                    <a href="#img2"><img src="{% static 'img/rescatado1.jpg' %}"></a>    
+                    <a href="#img3"><img src="{% static 'img/rescatado2.jpg' %}"></a>              
+                </div>
+                <div class="col-xs-4 col-lg-1 galeriaC">
+                    <a href="#img4"><img src="{% static 'img/resvatado4.jpg' %}"></a>
+                    <a href="#img5"><img src="{% static 'img/rescatado3.jpg' %}"></a>
+                </div>
+    <div class="col-xs-4 col-lg-1 galeriaD">
+            <a href="#img6"><img src="{% static 'img/chihuahua.jpg' %}"></a>
+            <a href="#img7"><img src="{% static 'img/perroca.jpg' %}"></a>   
+    </div>   
+    
+        
+</div>        
+<div class="modal" id="img1">
+    <h3>Perros Rescatados</h3>
+    <div class="imagen">
+        <a href="#img6">&#60;</a>
+        <a href="#img2">
+            <img src="{% static 'img/rescatado.jpg' %}">
+        </a>
+        <a href="#img2">></a>
+    </div>
+    <h3>Perrito rescatado de la calle</h3>
+    <a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img2">
+    <h3>Perros Rescatados</h3>
+    <div class="imagen">
+        <a href="#img1">&#60;</a>
+        <a href="#img3">
+            <img src="{% static 'img/rescatado1.jpg' %}">
+        </a>
+        <a href="#img3">></a>
+    </div>
+    <h3>Perrito abandonado al nacer, es muy cariñoso</h3>
+    <a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img3">
+    <h3>Perros Rescatados</h3>
+    <div class="imagen">
+        <a href="#img2">&#60;</a>
+        <a href="#img4">
+            <img src="{% static 'img/rescatado2.jpg' %}">
+        </a>
+        <a href="#img4">></a>
+    </div>
+    <h3>Cachorrito con mirada triste pero muy jugueton</h3>
+    <a class="cerrar" href="">X</a>
+</div>
+
+<div class="modal" id="img4">
+    <h3>Perros Rescatados</h3>
+    <div class="imagen">
+        <a href="#img3">&#60;</a>
+        <a href="#img1">
+            <img src="{% static 'img/resvatado4.jpg' %}">
+        </a>
+        <a href="#img5">></a>
+    </div>
+    <h3>"El ojos de huevo frito"</h3>
+    <a class="cerrar" href="">X</a>
+</div>    
+    <div class="modal" id="img5">
+        <h3>Perros Rescatados</h3>
+        <div class="imagen">
+            <a href="#img4">&#60;</a>
+            <a href="#img6">
+                <img src="{% static 'img/rescatado3.jpg' %}">
+            </a>
+            <a href="#img6">></a>
+        </div>
+        <h3>Siempre con una sonrisa en la cara</h3>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img6">
+        <h3>Perros Rescatados</h3>
+        <div class="imagen">
+            <a href="#img5">&#60;</a>
+            <a href="#img7">
+                <img src="{% static 'img/chihuahua.jpg' %}">
+            </a>
+            <a href="#img1">></a>
+        </div>
+        <h3>A pesar de ser pequeño tiene un gran corazòn</h3>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img7">
+            <h3>Perros Rescatados</h3>
+            <div class="imagen">
+                <a href="#img6">&#60;</a>
+                <a href="#img1">
+                    <img src="{% static 'img/perroca.jpg' %}">
+                </a>
+                <a href="#img1">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+                        
+        <footer>
+            Desarrollo de aplicaciones Web y Mobile.
+
+        </footer>
+</body>
+</html>
